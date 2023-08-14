@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00FACECE">
+
+    <ImageView
+        android:id="@+id/imageViewPhoto"
+        android:layout_width="161dp"
+        android:layout_height="169dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Title"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textViewFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="First Name"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textViewLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Last Name"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textViewDOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Date of Birth"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/naissance"
+        app:layout_constraintTop_toTopOf="@+id/naissance" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="301dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:text="Email"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/contact"
+        app:layout_constraintTop_toTopOf="@+id/contact" />
+
+    <TextView
+        android:id="@+id/textViewCell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Telephone"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewEmail"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmail" />
+
+    <TextView
+        android:id="@+id/textViewNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Numero"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/habitat"
+        app:layout_constraintTop_toTopOf="@+id/habitat" />
+
+    <TextView
+        android:id="@+id/textViewCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Ville"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewNumber"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNumber" />
+
+    <TextView
+        android:id="@+id/textViewState"
+        android:layout_width="59dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="5dp"
+        android:text="Region"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewCity"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCity" />
+
+    <TextView
+        android:id="@+id/textViewCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Pays"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewState"
+        app:layout_constraintTop_toBottomOf="@+id/textViewState" />
+
+    <TextView
+        android:id="@+id/naissance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Né(e) le :"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/imageViewPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPhoto" />
+
+    <TextView
+        android:id="@+id/habitat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text=" Vit à :"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/age"
+        app:layout_constraintTop_toBottomOf="@+id/age" />
+
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Contact :"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/habitat"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPostcode" />
+
+    <TextView
+        android:id="@+id/textViewPostcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Codepostal"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewCountry"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCountry" />
+
+    <TextView
+        android:id="@+id/textViewUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Username"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/Identifiant"
+        app:layout_constraintTop_toTopOf="@+id/Identifiant" />
+
+    <TextView
+        android:id="@+id/textViewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Password"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/password"
+        app:layout_constraintTop_toTopOf="@+id/password" />
+
+    <TextView
+        android:id="@+id/textViewNationality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Nationalite"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/Identifiant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Identifiant :"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/contact"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCell" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Mot de passe :"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/Identifiant"
+        app:layout_constraintTop_toBottomOf="@+id/Identifiant" />
+
+    <TextView
+        android:id="@+id/textViewStreet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="addresse"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewNumber"
+        app:layout_constraintTop_toTopOf="@+id/textViewNumber" />
+
+    <TextView
+        android:id="@+id/textViewAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/age"
+        app:layout_constraintTop_toTopOf="@+id/age" />
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Age :"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/naissance"
+        app:layout_constraintTop_toBottomOf="@+id/naissance" />
+
+    <TextView
+        android:id="@+id/coord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Coordonnées :"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <TextView
+        android:id="@+id/lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Lat. :"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/coord"
+        app:layout_constraintTop_toTopOf="@+id/coord" />
+
+    <TextView
+        android:id="@+id/long."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Long. :"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/lat"
+        app:layout_constraintTop_toBottomOf="@+id/lat" />
+
+    <TextView
+        android:id="@+id/fus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Fus. hor. :"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/coord"
+        app:layout_constraintTop_toBottomOf="@+id/long." />
+
+    <TextView
+        android:id="@+id/textViewLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/lat"
+        app:layout_constraintTop_toTopOf="@+id/lat" />
+
+    <TextView
+        android:id="@+id/textViewLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/long."
+        app:layout_constraintTop_toTopOf="@+id/long." />
+
+    <TextView
+        android:id="@+id/textViewOffset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/fus"
+        app:layout_constraintTop_toTopOf="@+id/fus" />
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="281dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewOffset"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOffset" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Prénom :"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Nom :"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Nat. :"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Titre :"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPhoto"
+        app:layout_constraintTop_toTopOf="@+id/imageViewPhoto" />
+
+
+    <!-- ... autres vues de détails -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
